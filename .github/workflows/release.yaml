@@ -17,7 +17,6 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           release-type: simple
-          changelog-path: CHANGELOG.md
           package-name: zap2xml
       - name: Login into GitHub Container Registry
         if: ${{ steps.release.outputs.release_created }}
